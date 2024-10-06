@@ -32,12 +32,15 @@ body {
         "experiencia__laboral"
         "contacto"
         "footer";
+        
     
-}
-
-.header {
+}.header{
     grid-area: header;
     background-color: var(--color-principal);
+}
+
+.barra_menu {
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,10 +90,7 @@ nav {
 .presentacion {
     grid-area: presentacion;
     background-color: var(--color-principal);
-    display: flex;
-    padding: 2rem 5rem;
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 2rem 7rem;
 }
 
 .content_presentacion ul {
@@ -105,7 +105,7 @@ nav {
     align-items: center;
     
 }.content_presentacion ul li img{
-   padding: 0 1rem;
+   padding: 0 .5rem;
 }
 
 .presentacion__titulo_principal {
