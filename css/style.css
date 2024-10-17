@@ -90,7 +90,9 @@ nav {
 .presentacion {
     grid-area: presentacion;
     background-color: var(--color-principal);
-    padding: 2rem 7rem;
+    padding: 2rem 8rem;
+    display: flex;
+    align-items: center;
 }
 
 .content_presentacion ul {
@@ -104,25 +106,28 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     
+    
 }.content_presentacion ul li img{
-   padding: 0 .5rem;
+   margin-right: 1rem;
+
 }
 
 .presentacion__titulo_principal {
     font-family: Raleway;
-    font-size: 50px;
+    font-size: clamp(1rem, 4vw, 50px);
     font-weight: 700;
-    line-height: 61.05px;
+   
     text-align: left;
     color: var(--color-terciario);
 
 }.presentacion__subtitulo_principal{
     padding: 1.5rem 0;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     color: var(--color-terciario);
 }.presentacion__enlaces{
     text-decoration: none;
+    
 }
 
 .sobre__mi {
@@ -158,4 +163,12 @@ nav {
 .footer {
     grid-area: footer;
     background-color: white;
+}
+
+@media (max-width:750px) {
+    body{
+        
+    }
+    
+    
 }
