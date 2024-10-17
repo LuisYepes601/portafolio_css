@@ -21,7 +21,7 @@ body {
 .content {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1,minmax(100px, 1fr);
     grid-template-rows: 9 auto;
     grid-template-areas:
         "header"
@@ -40,6 +40,7 @@ body {
 .header {
     grid-area: header;
     background-color: var(--color-principal);
+    width: 100%;
 
 }
 
@@ -49,6 +50,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem;
+    width: 100%;
 
 }
 
@@ -175,3 +177,13 @@ body {
     grid-area: footer;
     background-color: var(--color-terciario);
 }
+
+@media (max-width: 600px) {
+    .barra_menu {
+      padding: 1rem 2rem; /* Reducir el padding en dispositivos pequeños */
+    }
+  
+    .content_presentacion {
+      padding: 1rem 2rem; /* Ajustar paddings */
+    }
+  }
