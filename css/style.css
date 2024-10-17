@@ -34,141 +34,33 @@ body {
         "footer";
         
     
-}.header{
+}
+
+.header{
     grid-area: header;
     background-color: var(--color-principal);
-}
-
-.barra_menu {
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1rem;
-    padding: 1rem 0;
-}
-
-.header ul {
-    display: flex;
-}
-
-.header ul li {
-    list-style: none;
-    padding: 1rem;
-    
-}
-
-.header a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-}
-
-.name_header {
-    margin-right: 5rem;
-    font-weight: 700;
-    color: black;
-    white-space: nowrap;
-    padding-left: 1rem;
-
-}
-
-.contacto {
-    color: black;
-}.sobre_mi{
-    white-space: nowrap;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.presentacion {
+}.presentacion{
     grid-area: presentacion;
-    background-color: var(--color-principal);
-    padding: 2rem 8rem;
-    display: flex;
-    align-items: center;
-}
-
-.content_presentacion ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-    
-}.content_presentacion ul li{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    
-    
-}.content_presentacion ul li img{
-   margin-right: 1rem;
-
-}
-
-.presentacion__titulo_principal {
-    font-family: Raleway;
-    font-size: clamp(1rem, 4vw, 50px);
-    font-weight: 700;
-   
-    text-align: left;
-    color: var(--color-terciario);
-
-}.presentacion__subtitulo_principal{
-    padding: 1.5rem 0;
-    font-weight: 400;
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    color: var(--color-terciario);
-}.presentacion__enlaces{
-    text-decoration: none;
-    
-}
-
-.sobre__mi {
-    grid-area: sobre__mi;
     background-color: var(--color-secundario);
-}
-
-.Skills {
+}.sobre__mi{
+    grid-area: sobre__mi;
+    background-color: var(--color-terciario);
+}.Skills{
     grid-area: Skills;
     background-color: var(--color-principal);
-}
-
-.Hobbies {
+}.Hobbies{
     grid-area: Hobbies;
-    background-color: var(--color-principal);
-}
-
-.formacion__academica {
-    grid-area: formacion__academica;
     background-color: var(--color-secundario);
-}
-
-.experiencia__laboral {
+}.formacion__academica{
+    grid-area: formacion__academica;
+    background-color: var(--color-principal);
+}.experiencia__laboral{
     grid-area: experiencia__laboral;
-    background-color: var(--color-principal);
-}
-
-.contacto {
+    background-color: var(--color-terciario);
+}.contacto{
     grid-area: contacto;
-    background-color: var(--color-principal);
-}
-
-.footer {
+    background-color: var(--color-terciario);
+}.footer{
     grid-area: footer;
-    background-color: white;
-}
-
-@media (max-width:750px) {
-    body{
-        
-    }
-    
-    
+    background-color: var(--color-terciario);
 }
