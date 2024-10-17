@@ -140,6 +140,9 @@ body {
 .sobre__mi {
     grid-area: sobre__mi;
     background-color: var(--color-terciario);
+}.content__sobre__mi{
+    background-color: blue;
+    padding: 1rem 6rem;
 }
 
 .Skills {
