@@ -8,7 +8,7 @@
     --color-principal: rgba(245, 245, 245, 1);
     --color-secundario: rgba(234, 242, 253, 1);
     --fuente: Raleway;
-    --color-terciario:  rgba(70, 70, 70, 1);
+    --color-terciario: rgba(70, 70, 70, 1);
 
 
 }
@@ -32,35 +32,94 @@ body {
         "experiencia__laboral"
         "contacto"
         "footer";
-        
-    
+
+
 }
 
-.header{
+.header {
     grid-area: header;
     background-color: var(--color-principal);
-}.presentacion{
+
+}
+
+.barra_menu {
+    background-color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  1rem  5rem;
+
+}
+
+.menu_navegacion {
+  
+}
+
+.menu_navegacion ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  
+}.menu_navegacion li{
+    display: flex;
+    font-size: 1rem;
+    padding: 1rem;
+    white-space: nowrap;
+}.name_header  {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    white-space: nowrap;
+    font-weight: 700;
+    color: black;
+    
+}.sobre_mi{
+    text-decoration: none;
+    
+}.contacto__menu__navegacion{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.presentacion {
     grid-area: presentacion;
     background-color: var(--color-secundario);
-}.sobre__mi{
+}
+
+.sobre__mi {
     grid-area: sobre__mi;
     background-color: var(--color-terciario);
-}.Skills{
+}
+
+.Skills {
     grid-area: Skills;
     background-color: var(--color-principal);
-}.Hobbies{
+}
+
+.Hobbies {
     grid-area: Hobbies;
     background-color: var(--color-secundario);
-}.formacion__academica{
+}
+
+.formacion__academica {
     grid-area: formacion__academica;
     background-color: var(--color-principal);
-}.experiencia__laboral{
+}
+
+.experiencia__laboral {
     grid-area: experiencia__laboral;
     background-color: var(--color-terciario);
-}.contacto{
+}
+
+.contacto {
     grid-area: contacto;
     background-color: var(--color-terciario);
-}.footer{
+}
+
+.footer {
     grid-area: footer;
     background-color: var(--color-terciario);
 }
