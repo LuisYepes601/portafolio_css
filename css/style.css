@@ -16,16 +16,14 @@
 body {
     max-width: 100%;
     font-family: var(--fuente);
-    body {
-        overflow-x: hidden;
-      }
+    overflow-x: hidden;
 }
 
 
 .content {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1,minmax(100px, 1fr);
+    grid-template-columns: minmax(100px, 1fr);
     grid-template-rows: 9 auto;
     grid-template-areas:
         "header"
@@ -181,13 +179,18 @@ body {
     grid-area: footer;
     background-color: var(--color-terciario);
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.barra_menu {
+    padding: 1rem 5rem;
+    width: 100%;
+}
 
 @media (max-width: 600px) {
     .barra_menu {
-      padding: 1rem 2rem; /* Reducir el padding en dispositivos pequeños */
+        padding: 1rem 2rem; /* Reducir padding en pantallas pequeñas */
     }
-  
-    .content_presentacion {
-      padding: 1rem 2rem; /* Ajustar paddings */
-    }
-  }
+}
