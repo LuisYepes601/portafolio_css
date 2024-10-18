@@ -46,6 +46,7 @@ body {
     background-color: aqua;
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
@@ -56,6 +57,7 @@ body {
     justify-content: space-between;
 }.menu_navegacion li{
     display: flex;
+   
     gap: 1rem;
 }.menu_navegacion a{
     text-decoration: none;
@@ -93,4 +95,14 @@ body {
 }.footer{
     grid-area: footer;
     background-color: rgb(0, 255, 115);
+}
+
+@media screen and (max-width:740px) {
+    
+    .barra_menu{
+        background-color: beige;
+        flex-direction: column;
+    }.menu_navegacion{
+        
+    }
 }
