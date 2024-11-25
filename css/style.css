@@ -21,8 +21,9 @@ body {
 
 
 .content {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1, minmax(100px, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 9 auto;
     grid-template-areas:
         "header"
@@ -40,32 +41,50 @@ body {
 
 .header {
     grid-area: header;
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
+    font-size: clamp(.7rem, 3vw, 1rem);
 
-}.barra_menu{
-    background-color: aqua;
+}
+
+.barra_menu {
+    background-color: var(--color-principal);
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-}.menu_navegacion{
-   
-}.menu_navegacion ul{
-    display: flex;
-    justify-content: space-between;
-}.menu_navegacion li{
-    display: flex;
-   
-    gap: 1rem;
-}.menu_navegacion a{
-    text-decoration: none;
-}.name_header{
+    padding: 2rem;
+}
+
+.menu_navegacion {
+    max-width: 100%;
+}
+
+.menu_navegacion ul {
     display: flex;
     gap: 1rem;
+    justify-content: space-between;
+}
+
+.menu_navegacion li {
+    display: flex;
+
+    gap: .5rem;
+}
+
+.menu_navegacion a {
+    text-decoration: none;
+}
+
+.name_header {
+    display: flex;
+    margin-right: 1rem;
     align-items: center;
     text-decoration: none;
+}
+
+.sobre_mi,
+.name_header {
+    white-space: nowrap;
 }
 
 .presentacion {
@@ -77,32 +96,35 @@ body {
     grid-area: sobre__mi;
     background-color: var(--color-principal);
 
-}.Skills{
-    grid-area: Skills;
-    background-color: var(--color-principal);
-}.Hobbies{
-    grid-area: Hobbies;
-    background-color: var(--color-principal);
-}.formacion__academica{
-    grid-area: formacion__academica;
-    background-color: beige;
-}.experiencia__laboral{
-    grid-area: experiencia__laboral;
-    background-color: var(--color-principal);
-}.contacto{
-    grid-area: contacto;
-    background-color: aqua;
-}.footer{
-    grid-area: footer;
-    background-color: rgb(0, 255, 115);
+
 }
 
-@media screen and (max-width:740px) {
-    
-    .barra_menu{
-        background-color: beige;
-        flex-direction: column;
-    }.menu_navegacion{
-        
-    }
+.Skills {
+    grid-area: Skills;
+    background-color: var(--color-principal);
+}
+
+.Hobbies {
+    grid-area: Hobbies;
+    background-color: var(--color-principal);
+}
+
+.formacion__academica {
+    grid-area: formacion__academica;
+    background-color: beige;
+}
+
+.experiencia__laboral {
+    grid-area: experiencia__laboral;
+    background-color: var(--color-principal);
+}
+
+.contacto {
+    grid-area: contacto;
+    background-color: aqua;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(0, 255, 115);
 }
