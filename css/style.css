@@ -21,7 +21,7 @@ body {
 
 
 .content {
-   
+
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 9 auto;
@@ -127,4 +127,16 @@ body {
 .footer {
     grid-area: footer;
     background-color: rgb(0, 255, 115);
+}
+
+@media (max-width: 340px) {
+    .content {
+        background-color: aqua;
+    }
+
+    .barra_menu{
+        flex-direction: column;
+    }
+
+
 }
