@@ -21,9 +21,9 @@ body {
 
 
 .content {
-    width: 100%;
+   
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 9 auto;
     grid-template-areas:
         "header"
